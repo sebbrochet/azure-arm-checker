@@ -1,0 +1,2 @@
+ERROR: variable OSDiskName is used but not defined
+ERROR: variable sizeOfDiskInGB is used but not defined

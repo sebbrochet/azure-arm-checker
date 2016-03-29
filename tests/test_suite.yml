@@ -1,0 +1,8 @@
+# aa-checker test suite
+# Requires clicheck (pip install clicheck)
+# clicheck -u tests/test_suite.yml run 
+---
+
+- name: variables_used_but_not_defined
+  command: "bin/aa-checker tests/azuredeploy.json"
+  stdout: ["tests/variables_used_but_not_defined.txt"]
