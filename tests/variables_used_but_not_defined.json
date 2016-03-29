@@ -25,12 +25,6 @@
       "metadata": {
         "description": "Size of VM"
       }
-    },
-    "sizeOfEachDataDiskInGB": {
-      "type": "string",
-      "metadata": {
-        "description": "Size of each data disk in GB"
-      }
     }
   },
   "variables": {
@@ -52,13 +46,7 @@
     "storageAccountType": "Standard_LRS",
     "virtualNetworkName": "myVNET",
     "vmName": "myVM",
-    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "nicName": "myNIC",
-    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
-    "dataDisk1VhdName": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('vmName'),'dataDisk1.vhd')]",
-    "dataDisk2VhdName": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('vmName'),'dataDisk2.vhd')]",
-    "dataDisk3VhdName": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('vmName'),'dataDisk3.vhd')]",
-    "dataDisk4VhdName": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('vmName'),'dataDisk4.vhd')]",
     "apiVersion": "2015-06-15"
   },
   "resources": [

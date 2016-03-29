@@ -18,6 +18,7 @@ def get_patterns_used(d, pattern):
 
    list_of_expr = []
    fill_list_of_expr(d, list_of_expr)
+
    for expr in list_of_expr:
      import re
      m = re.findall("%s\(\'(\w+)\'\)" % pattern, expr)
@@ -47,7 +48,7 @@ def check(arm_template):
    parameters_used = []
    variables_used = []
 
-   parameters_used = get_patterns_used(variables, "parameters")
+   parameters_used = get_patterns_used(data, "parameters")
    variables_used = get_patterns_used(data, "variables")
 
    for parameter_used in parameters_used:
@@ -58,6 +59,14 @@ def check(arm_template):
       if variable_used not in variables:
          print "ERROR: variable %s is used but not defined" % variable_used
 
+   for parameter in parameters:
+      if parameter not in parameters_used:
+         print "WARNING: parameter %s is defined but not used, really?" % parameter
+
+   for variable in variables:
+      if variable not in variables_used:
+         print "WARNING: variable %s is defined but not used, really?" % variable
+         
 def main():
     import argparse
 

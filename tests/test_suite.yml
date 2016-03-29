@@ -4,5 +4,13 @@
 ---
 
 - name: variables_used_but_not_defined
-  command: "bin/aa-checker tests/azuredeploy.json"
+  command: "bin/aa-checker tests/variables_used_but_not_defined.json"
   stdout: ["tests/variables_used_but_not_defined.txt"]
+
+- name: parameter_defined_but_not_used
+  command: "bin/aa-checker tests/parameter_defined_but_not_used.json"
+  stdout: ["tests/parameter_defined_but_not_used.txt"]
+
+- name: variable_defined_but_not_used
+  command: "bin/aa-checker tests/variable_defined_but_not_used.json"
+  stdout: ["tests/variable_defined_but_not_used.txt"]
