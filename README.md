@@ -6,6 +6,8 @@ A quick and dirty tool to check if all parameters or variables used in the templ
 
 ## Usage
 ```
+usage: aa-checker [-h] template
+
 Azure ARM template checker.
 
 positional arguments:
