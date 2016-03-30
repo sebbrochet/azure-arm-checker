@@ -3,4 +3,4 @@ dependencies:
     - pip install clicheck
 test:
   override:
-    - clicheck -u tests/test_suite.yaml run
+    - clicheck -u tests/test_suite.yml run
