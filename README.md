@@ -8,6 +8,13 @@ A quick and dirty tool to check if all parameters or variables used in the templ
 * Flag as *warning* when a variable is defined but not used
 * Flag as *warning* when a parameter is defined but not used
 
+## Installation
+
+* From source
+  * `git clone https://github.com/sebbrochet/azure-arm-checker.git`
+  * `cd azure-arm-checker`
+  * `python setup.py install`
+
 ## Usage
 ```
 usage: aa-checker [-h] template
