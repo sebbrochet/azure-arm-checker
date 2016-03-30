@@ -41,10 +41,6 @@ def check(arm_template):
    if 'variables' in data:
      variables = data['variables']
 
-   list_of_expr = []
-
-   fill_list_of_expr(data, list_of_expr)
-
    parameters_used = []
    variables_used = []
 
