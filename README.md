@@ -2,6 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/sebbrochet/azure-arm-checker.svg?style=svg)](https://circleci.com/gh/sebbrochet/azure-arm-checker)
 [![Build Status](https://travis-ci.org/sebbrochet/azure-arm-checker.svg?branch=master)](https://travis-ci.org/sebbrochet/azure-arm-checker)
+[![Build Status](https://drone.io/github.com/sebbrochet/azure-arm-checker/status.png)](https://drone.io/github.com/sebbrochet/azure-arm-checker/latest)
 
 ## Purpose
 A quick and dirty tool to check if all parameters or variables used in the template have been defined.  
